@@ -1,4 +1,4 @@
-# Process Scheduler Enhancement
+# Project 2: Process Scheduler Enhancement
 
 ## Overview
 
@@ -8,7 +8,7 @@ This project involves replacing Xv6's default round-robin scheduler with a more 
 
 By completing this project, students will:
 
-- Gain deep understanding of process scheduling algorithms and their trade-offs
+- Gain a deep understanding of process scheduling algorithms and their trade-offs
 - Learn to work with complex kernel data structures and synchronization primitives
 - Understand the intricacies of context switching and process state management
 - Implement priority-based scheduling with starvation prevention mechanisms
@@ -23,12 +23,12 @@ Choose and implement one of the following scheduling algorithms:
 
 **Priority-Based Scheduler**
 - Assign priority levels to processes (e.g., 0-31, where 0 is highest priority)
-- Schedule highest priority ready process first
+- Schedule the highest priority ready process first
 - Handle priority inheritance and inversion scenarios
 
 **Multilevel Feedback Queue (MLFQ)**
 - Implement multiple priority queues with different time quantum sizes
-- Automatically adjust process priorities based on behavior
+- Automatically adjust process priorities based on behaviour
 - Provide interactive processes with higher priority
 
 #### 2. Priority Assignment Mechanism
@@ -38,7 +38,7 @@ Choose and implement one of the following scheduling algorithms:
 
 #### 3. Aging Implementation
 - Prevent priority inversion and starvation
-- Gradually increase priority of processes that haven't run recently
+- Gradually increase the priority of processes that haven't run recently
 - Implement configurable aging parameters
 
 #### 4. Scheduler Statistics
@@ -48,13 +48,6 @@ Track and report the following metrics:
 - CPU utilization percentage
 - Context switch frequency
 - Priority distribution of scheduled processes
-
-### Advanced Features (Optional)
-
-- **Real-time Process Support**: Implement deadline-aware scheduling
-- **SMP Scheduling**: Extend scheduler for multi-processor systems
-- **Load Balancing**: Distribute processes across available CPU cores
-- **Scheduler Policies**: Support for different scheduling classes (batch, interactive, real-time)
 
 ## Technical Specifications
 
@@ -103,7 +96,7 @@ struct schedstat {
 4. Test with simple priority assignments
 
 ### Phase 2: Aging Mechanism
-1. Implement aging algorithm to prevent starvation
+1. Implement an aging algorithm to prevent starvation
 2. Add timer-based priority adjustments
 3. Configure aging parameters (increment rate, maximum boost)
 4. Validate aging effectiveness with long-running processes
@@ -112,11 +105,11 @@ struct schedstat {
 1. Add statistical counters to relevant kernel structures
 2. Implement statistics collection during context switches
 3. Create user-space utilities to display scheduler metrics
-4. Verify accuracy of collected statistics
+4. Verify the accuracy of collected statistics
 
 ### Phase 4: Testing and Optimization
-1. Create comprehensive test suite covering edge cases
-2. Benchmark performance against original round-robin scheduler
+1. Create a comprehensive test suite covering edge cases
+2. Benchmark performance against the original round-robin scheduler
 3. Optimize critical paths in scheduler code
 4. Document performance characteristics and trade-offs
 
@@ -129,7 +122,7 @@ struct schedstat {
 - System call parameter validation
 
 ### Integration Tests
-- Multi-process scheduling behavior
+- Multi-process scheduling behaviour
 - Starvation prevention effectiveness
 - Performance under various workloads
 - Stress testing with many processes
@@ -161,20 +154,18 @@ struct schedstat {
 - Xv6 source code and documentation
 - Operating Systems: Three Easy Pieces (OSTEP) - Scheduling chapters
 - Advanced Programming in the UNIX Environment
-- Intel x86 architecture manuals
 - GDB debugging guide for kernel development
 
 ## Getting Started
 
-1. Clone the Xv6 repository and set up development environment
-2. Study the existing scheduler implementation in `proc.c`
-3. Design your scheduler algorithm and data structures
-4. Implement incrementally, testing each component thoroughly
-5. Document your design decisions and trade-offs
+1. Study the existing scheduler implementation in `proc.c`
+2. Design your scheduler algorithm and data structures
+3. Implement incrementally, testing each component thoroughly
+4. Document your design decisions and trade-offs
 
 ## Submission Guidelines
 
-Submit your project as a Git repository containing:
+Submit your project as a zip file containing:
 - Modified Xv6 source code with your scheduler implementation
 - Test programs demonstrating scheduler functionality
 - README with build and usage instructions
@@ -183,4 +174,6 @@ Submit your project as a Git repository containing:
 
 ---
 
-**Note**: This project requires significant kernel programming experience. Start early, test frequently, and don't hesitate to seek help when debugging kernel-level issues.
+**Note**: This project requires significant experience with kernel programming. Start early, test frequently, and don't hesitate to seek help when debugging kernel-level issues.
+
+***Instructor:*** Hamzeh Khazaei
