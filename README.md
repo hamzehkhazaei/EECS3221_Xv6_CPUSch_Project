@@ -130,50 +130,9 @@ p->wait_time = 0
    - Test `setpriority()` and `getpriority()` with various inputs
    - Verify error handling for invalid PIDs and priorities
 
-There is a sample test program test_prio.c, that you can use/modify for testing purposes.
+There is a sample test program in the source folder, `priority_test.c`, that you can use/modify for testing purposes.
 
-### Expected Output Example
-
-```
-Priority Scheduler Test with Aging
-===================================
-Child 1 (PID 4, Priority 8): Starting CPU-intensive task
-Child 2 (PID 5, Priority 5): Starting CPU-intensive task  
-Child 3 (PID 6, Priority 2): Starting CPU-intensive task
-
-Child 1 (High Priority): 0 iterations, current priority: 8
-Child 1 (High Priority): 400000 iterations, current priority: 8
-Child 2 (Medium Priority): 0 iterations, current priority: 5
-Child 3 (Low Priority): 0 iterations, current priority: 3  // aged!
-...
-All processes finished - aging prevented starvation!
-```
-
-## 📦 Deliverables
-
-1. **Source Code** (80%)
-   - All modified Xv6 files with clear, commented code
-   - Compilation without warnings or errors
-   - Proper coding style and formatting
-
-2. **Test Program** (10%)
-   - Comprehensive test demonstrating all features
-   - Clear output showing scheduler behaviour
-   - Test cases covering edge cases
-
-3. **Project Report** (10%)
-   - Design decisions and implementation details
-   - Analysis of scheduler performance and behaviour
-   - Discussion of challenges and solutions
-   - Screenshots/logs of test execution
-
-## 📚 Resources and References
-
-- [Xv6 Book](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
-- Operating System Concepts (Silberschatz, Galvin, Gagne) - Chapter 5: CPU Scheduling
-- Linux kernel scheduler documentation for real-world examples
-
-## 📤 Submission Instructions
+## 📤 Deliverables and Submission Instructions
 
 1. **Code Submission**: Zip the whole xv6-public folder including all your modification and submit az `xv6-public.zip`.
 2. **Demo Video**: 5-minute video demonstrating your scheduler in action
@@ -183,6 +142,12 @@ All processes finished - aging prevented starvation!
 > **⚠️ Important**: This is an individual project. While you may discuss concepts with classmates, all code must be your own work. Copying code from online sources or other students will result in academic penalties.
 
 ---
+
+## 📚 Resources and References
+
+- [Xv6 Book](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
+- Operating System Concepts (Silberschatz, Galvin, Gagne) - Chapter 5: CPU Scheduling
+- Linux kernel scheduler documentation for real-world examples
 
 ## 🚀 Getting Started
 
