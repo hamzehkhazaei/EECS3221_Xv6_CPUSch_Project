@@ -130,10 +130,6 @@ p->wait_time = 0
    - Test `setpriority()` and `getpriority()` with various inputs
    - Verify error handling for invalid PIDs and priorities
 
-4. **Stress Testing**
-   - Multiple processes with same priority
-   - Rapid priority changes
-   - Process creation/termination during scheduling
 
 ### Expected Output Example
 
@@ -161,12 +157,12 @@ All processes finished - aging prevented starvation!
 
 2. **Test Program** (10%)
    - Comprehensive test demonstrating all features
-   - Clear output showing scheduler behavior
+   - Clear output showing scheduler behaviour
    - Test cases covering edge cases
 
 3. **Project Report** (10%)
    - Design decisions and implementation details
-   - Analysis of scheduler performance and behavior
+   - Analysis of scheduler performance and behaviour
    - Discussion of challenges and solutions
    - Screenshots/logs of test execution
 
@@ -180,13 +176,6 @@ All processes finished - aging prevented starvation!
 | **Testing** | Comprehensive tests, clear demonstration | Good test coverage | Basic testing | Inadequate testing |
 | **Code Quality** | Clean, well-documented, efficient | Minor style/documentation issues | Acceptable code quality | Poor code quality |
 
-## 🎖️ Bonus Opportunities (+10 points each)
-
-1. **Multi-level Priority Queues**: Implement separate queues for different priority levels
-2. **Dynamic Priority Adjustment**: Implement CPU burst-based priority adjustment
-3. **Process Niceness**: Add user-controllable process niceness levels
-4. **Scheduler Statistics**: Implement detailed scheduling statistics and reporting
-
 ## 📚 Resources and References
 
 - [Xv6 Book](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
@@ -195,11 +184,8 @@ All processes finished - aging prevented starvation!
 
 ## 📤 Submission Instructions
 
-1. **Code Submission**: Submit all modified Xv6 files in a compressed archive
-2. **Report**: PDF document (max 10 pages) with analysis and screenshots
-3. **Demo Video**: 5-minute video demonstrating your scheduler in action
-4. **Due Date**: [Insert your due date]
-5. **Late Policy**: [Insert your late policy]
+1. **Code Submission**: Zip the whole xv6-public folder including all your modification and submit az `xv6-public.zip`.
+2. **Demo Video**: 5-minute video demonstrating your scheduler in action
 
 ## 🎓 Academic Integrity
 
@@ -209,12 +195,11 @@ All processes finished - aging prevented starvation!
 
 ## 🚀 Getting Started
 
-1. **Clone the Xv6 repository**
-2. **Familiarize yourself with the existing scheduler** in `proc.c`
-3. **Start with Part 1** - implement basic priority scheduling
-4. **Test frequently** with simple programs
-5. **Add aging mechanism** in Part 2
-6. **Create comprehensive tests** in Part 3
+1. **Familiarize yourself with the existing scheduler** in `proc.c`
+2. **Start with Part 1** - implement basic priority scheduling
+3. **Test frequently** with simple programs
+4. **Add aging mechanism** in Part 2
+5. **Create comprehensive tests** in Part 3
 
 **Good luck with your implementation! Remember that operating systems programming requires patience, careful debugging, and attention to detail. Start early and test frequently!** 💻✨
 
@@ -223,8 +208,10 @@ All processes finished - aging prevented starvation!
 ### 📞 Help and Support
 
 - **Office Hours**: [Insert your office hours]
-- **Discussion Forum**: [Insert forum link]
-- **Email**: [Insert your email]
+- **Discussion Forum & Q\A**: the course forum in eClass.
+
 
 ### 🏷️ Tags
 `#operating-systems` `#Xv6` `#scheduler` `#kernel-programming` `#system-calls`
+
+**Instructor:** Hamzeh Khazaei
