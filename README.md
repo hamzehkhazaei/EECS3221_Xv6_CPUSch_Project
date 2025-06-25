@@ -137,11 +137,6 @@ There is a sample test program in the source folder, `priority_test.c`, that you
 1. **Code Submission**: Zip the whole xv6-public folder including all your modification and submit az `xv6-public.zip`.
 2. **Demo Video**: 5-minute video demonstrating your scheduler in action
 
-## 🎓 Academic Integrity
-
-> **⚠️ Important**: This is an individual project. While you may discuss concepts with classmates, all code must be your own work. Copying code from online sources or other students will result in academic penalties.
-
----
 
 ## 📚 Resources and References
 
@@ -159,15 +154,9 @@ There is a sample test program in the source folder, `priority_test.c`, that you
 
 **Good luck with your implementation! Remember that operating systems programming requires patience, careful debugging, and attention to detail. Start early and test frequently!** 💻✨
 
----
+## 🎓 Academic Integrity
 
-### 📞 Help and Support
-
-- **Office Hours**: [Insert your office hours]
-- **Discussion Forum & Q\A**: the course forum in eClass.
-
-
-### 🏷️ Tags
-`#operating-systems` `#Xv6` `#scheduler` `#kernel-programming` `#system-calls`
+**⚠️ Important**: This is an individual project. While you may discuss concepts with classmates, all code must be your own work. Copying code from online sources or other students will result in academic penalties.
+Vibe coding is allowed and encouraged.
 
 **Instructor:** Hamzeh Khazaei
