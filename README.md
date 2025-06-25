@@ -45,7 +45,7 @@ Implement a priority-based scheduler that:
 - [ ] Add complete system call interface (syscall numbers, handlers, user stubs)
 
 #### 4. Priority Inheritance
-- [ ] Child processes inherit parent's priority in `fork()`
+- [ ] Child processes inherit the parent's priority in `fork()`
 - [ ] Proper initialization in `allocproc()`
 
 ### Part 2: Aging Mechanism (30 points)
@@ -124,12 +124,13 @@ p->wait_time = 0
 
 2. **Aging Effectiveness Test**
    - Create high and low priority processes
-   - Verify low priority processes eventually run due to aging
+   - Verify that the low-priority processes eventually run due to aging
 
 3. **System Call Validation**
    - Test `setpriority()` and `getpriority()` with various inputs
    - Verify error handling for invalid PIDs and priorities
 
+There is a sample test program test_prio.c, that you can use/modify for testing purposes.
 
 ### Expected Output Example
 
@@ -165,16 +166,6 @@ All processes finished - aging prevented starvation!
    - Analysis of scheduler performance and behaviour
    - Discussion of challenges and solutions
    - Screenshots/logs of test execution
-
-## 📊 Grading Rubric
-
-| Component | Excellent (A) | Good (B) | Satisfactory (C) | Needs Improvement (D/F) |
-|-----------|---------------|----------|------------------|-------------------------|
-| **Basic Priority Scheduler** | Fully functional, efficient, safe | Minor issues, mostly working | Basic functionality, some bugs | Major problems, doesn't compile |
-| **Aging Mechanism** | Perfect aging, no starvation | Aging works, minor edge cases | Basic aging implementation | Aging broken or missing |
-| **System Calls** | Complete interface, proper error handling | Minor syscall issues | Basic syscalls work | Syscalls broken/incomplete |
-| **Testing** | Comprehensive tests, clear demonstration | Good test coverage | Basic testing | Inadequate testing |
-| **Code Quality** | Clean, well-documented, efficient | Minor style/documentation issues | Acceptable code quality | Poor code quality |
 
 ## 📚 Resources and References
 
