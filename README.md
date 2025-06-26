@@ -160,6 +160,6 @@ Vibe coding is allowed and encouraged.
 ## 📤 Deliverables and Submission Instructions
 You need to submit two files:
 1. **Code Submission**: Zip the whole xv6-public folder, including all your modifications and test programs, and submit as `xv6-public.zip`.
-2. **Demo Video**: 5-minute video (i.e., Zoom with screen capture) demonstrating your understanding of the project by showing your scheduler in action.
+2. **Demo Video**: A 5-minute video (e.g., Zoom with screen capture and Camera) explaining your code and showcasing your scheduler in action.
 
 **Instructor:** Hamzeh Khazaei
