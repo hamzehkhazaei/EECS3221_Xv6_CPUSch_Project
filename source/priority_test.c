@@ -2,6 +2,7 @@
 #include "stat.h"
 #include "user.h"
 
+// This is a template tester program; you may modify as you see fit. 
 int
 main(int argc, char *argv[])
 {
