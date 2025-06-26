@@ -1,4 +1,4 @@
-# Project 2: Priority CPU Scheduling
+# Project 2: Priority CPU Scheduling for Xv6
 
 ## 📋 Overview
 
@@ -16,7 +16,9 @@ By completing this project, you will:
 ## 📚 Background
 
 ### Current Xv6 Scheduler
-The default xv6 scheduler uses a simple FIFO (First In, First Out) algorithm that runs processes in the order they become runnable. It scans the process table from the beginning and runs the first runnable process it finds until that process voluntarily yields, blocks, or exits. This is essentially a round-robin scheduler with infinite quantum time - there's no preemptive time slicing, so processes run until they give up the CPU voluntarily. This approach is simple but doesn't allow for prioritizing critical processes or ensuring fair time distribution.ty-Based Scheduler with Aging in Xv6.
+The default xv6 scheduler employs a simple round-robin algorithm with a fixed time quantum of approximately 10 milliseconds, which executes processes in the order they become runnable. 
+It scans the process table from the beginning and runs the first runnable process it finds until that process voluntarily yields, blocks, exits, or the time slice (i.e., quantum) expires. 
+This approach is simple but doesn't allow for prioritizing critical processes or ensuring fair time distribution.
 
 ### Priority Scheduling
 Priority scheduling assigns each process a priority level and always runs the highest-priority ready process. However, this can lead to **starvation** where low-priority processes never get CPU time.
@@ -36,7 +38,7 @@ Implement a priority-based scheduler that:
 - [ ] Default priority: 5
 
 #### 2. Modify the Scheduler Function
-- [ ] Change `scheduler()` in `proc.c` to select highest-priority runnable process
+- [ ] Change `scheduler()` in `proc.c` to select the highest-priority runnable process
 - [ ] Maintain safety with proper locking mechanisms
 
 #### 3. Implement Priority Management System Calls
@@ -57,7 +59,7 @@ Implement aging to prevent starvation:
 - [ ] `wait_time`: Time spent waiting (in scheduler ticks)
 
 #### 2. Aging Algorithm
-- [ ] Increment priority every 10 scheduler ticks of waiting
+- [ ] Increment priority every `X`, e.g., 10, scheduler ticks of waiting
 - [ ] Maximum priority cap at 10
 - [ ] Reset priority to base priority when process runs
 
@@ -65,15 +67,17 @@ Implement aging to prevent starvation:
 - [ ] Modify scheduler to apply aging before process selection
 - [ ] Ensure atomic operations with proper locking
 
-### Part 3: Testing and Validation (10 points)
+### Part 3: Testing and Validation 
 
-#### 1. Create Test Program
-- [ ] Program that creates multiple processes with different priorities
-- [ ] CPU-intensive workloads to demonstrate scheduling behavior
+#### 1. Create/Modify Test Program
+Use and modify the [priority_test.c](source/priority_test.c) program that
+- [ ] Creates multiple processes with different priorities
+- [ ] CPU-intensive workloads to demonstrate scheduling behaviour
 - [ ] Periodic priority reporting to show aging effects
 
-#### 2. Demonstrate Functionality
-- [ ] Prove that higher priority processes get preference
+#### 2. Demonstrate Functionality (10 points)
+create a 5 min video presentation that:
+- [ ] Show that higher priority processes get preference
 - [ ] Show that aging prevents starvation of low-priority processes
 - [ ] Validate that all processes eventually complete
 
@@ -130,59 +134,19 @@ p->wait_time = 0
    - Test `setpriority()` and `getpriority()` with various inputs
    - Verify error handling for invalid PIDs and priorities
 
-There is a sample test program test_prio.c, that you can use/modify for testing purposes.
+There is a sample test program in the source folder, `priority_test.c`, that you can use/modify for testing purposes.
 
-### Expected Output Example
+## 📤 Deliverables and Submission Instructions
 
-```
-Priority Scheduler Test with Aging
-===================================
-Child 1 (PID 4, Priority 8): Starting CPU-intensive task
-Child 2 (PID 5, Priority 5): Starting CPU-intensive task  
-Child 3 (PID 6, Priority 2): Starting CPU-intensive task
+1. **Code Submission**: Zip the whole xv6-public folder including all your modification and submit az `xv6-public.zip`.
+2. **Demo Video**: 5-minute video demonstrating your scheduler in action
 
-Child 1 (High Priority): 0 iterations, current priority: 8
-Child 1 (High Priority): 400000 iterations, current priority: 8
-Child 2 (Medium Priority): 0 iterations, current priority: 5
-Child 3 (Low Priority): 0 iterations, current priority: 3  // aged!
-...
-All processes finished - aging prevented starvation!
-```
-
-## 📦 Deliverables
-
-1. **Source Code** (80%)
-   - All modified Xv6 files with clear, commented code
-   - Compilation without warnings or errors
-   - Proper coding style and formatting
-
-2. **Test Program** (10%)
-   - Comprehensive test demonstrating all features
-   - Clear output showing scheduler behaviour
-   - Test cases covering edge cases
-
-3. **Project Report** (10%)
-   - Design decisions and implementation details
-   - Analysis of scheduler performance and behaviour
-   - Discussion of challenges and solutions
-   - Screenshots/logs of test execution
 
 ## 📚 Resources and References
 
 - [Xv6 Book](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
 - Operating System Concepts (Silberschatz, Galvin, Gagne) - Chapter 5: CPU Scheduling
 - Linux kernel scheduler documentation for real-world examples
-
-## 📤 Submission Instructions
-
-1. **Code Submission**: Zip the whole xv6-public folder including all your modification and submit az `xv6-public.zip`.
-2. **Demo Video**: 5-minute video demonstrating your scheduler in action
-
-## 🎓 Academic Integrity
-
-> **⚠️ Important**: This is an individual project. While you may discuss concepts with classmates, all code must be your own work. Copying code from online sources or other students will result in academic penalties.
-
----
 
 ## 🚀 Getting Started
 
@@ -194,15 +158,9 @@ All processes finished - aging prevented starvation!
 
 **Good luck with your implementation! Remember that operating systems programming requires patience, careful debugging, and attention to detail. Start early and test frequently!** 💻✨
 
----
+## 🎓 Academic Integrity
 
-### 📞 Help and Support
-
-- **Office Hours**: [Insert your office hours]
-- **Discussion Forum & Q\A**: the course forum in eClass.
-
-
-### 🏷️ Tags
-`#operating-systems` `#Xv6` `#scheduler` `#kernel-programming` `#system-calls`
+**⚠️ Important**: This is an individual project. While you may discuss concepts with classmates, all code must be your own work. Copying code from online sources or other students will result in academic penalties.
+Vibe coding is allowed and encouraged.
 
 **Instructor:** Hamzeh Khazaei
