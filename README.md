@@ -70,7 +70,7 @@ Implement aging to prevent starvation:
 ### Part 3: Testing and Validation 
 
 #### 1. Create/Modify Test Program
-Use and modify the [priority_test.c](./source/priority_test.c) program that
+Use and modify the [priority_test.c](source/priority_test.c) program that
 - [ ] Creates multiple processes with different priorities
 - [ ] CPU-intensive workloads to demonstrate scheduling behaviour
 - [ ] Periodic priority reporting to show aging effects
