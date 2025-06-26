@@ -1,4 +1,4 @@
-# Project 2: Priority CPU Scheduling
+# Project 2: Priority CPU Scheduling for Xv6
 
 ## 📋 Overview
 
@@ -16,7 +16,9 @@ By completing this project, you will:
 ## 📚 Background
 
 ### Current Xv6 Scheduler
-The default xv6 scheduler uses a simple FIFO (First In, First Out) algorithm that runs processes in the order they become runnable. It scans the process table from the beginning and runs the first runnable process it finds until that process voluntarily yields, blocks, or exits. This is essentially a round-robin scheduler with infinite quantum time - there's no preemptive time slicing, so processes run until they give up the CPU voluntarily. This approach is simple but doesn't allow for prioritizing critical processes or ensuring fair time distribution.ty-Based Scheduler with Aging in Xv6.
+The default xv6 scheduler employs a simple round-robin algorithm with a fixed time quantum of approximately 10 milliseconds, which executes processes in the order they become runnable. 
+It scans the process table from the beginning and runs the first runnable process it finds until that process voluntarily yields, blocks, exits, or the time slice (i.e., quantum) expires. 
+This approach is simple but doesn't allow for prioritizing critical processes or ensuring fair time distribution.
 
 ### Priority Scheduling
 Priority scheduling assigns each process a priority level and always runs the highest-priority ready process. However, this can lead to **starvation** where low-priority processes never get CPU time.
@@ -36,7 +38,7 @@ Implement a priority-based scheduler that:
 - [ ] Default priority: 5
 
 #### 2. Modify the Scheduler Function
-- [ ] Change `scheduler()` in `proc.c` to select highest-priority runnable process
+- [ ] Change `scheduler()` in `proc.c` to select the highest-priority runnable process
 - [ ] Maintain safety with proper locking mechanisms
 
 #### 3. Implement Priority Management System Calls
@@ -57,7 +59,7 @@ Implement aging to prevent starvation:
 - [ ] `wait_time`: Time spent waiting (in scheduler ticks)
 
 #### 2. Aging Algorithm
-- [ ] Increment priority every 10 scheduler ticks of waiting
+- [ ] Increment priority every `X`, e.g., 10, scheduler ticks of waiting
 - [ ] Maximum priority cap at 10
 - [ ] Reset priority to base priority when process runs
 
@@ -65,15 +67,17 @@ Implement aging to prevent starvation:
 - [ ] Modify scheduler to apply aging before process selection
 - [ ] Ensure atomic operations with proper locking
 
-### Part 3: Testing and Validation (10 points)
+### Part 3: Testing and Validation 
 
-#### 1. Create Test Program
-- [ ] Program that creates multiple processes with different priorities
-- [ ] CPU-intensive workloads to demonstrate scheduling behavior
+#### 1. Create/Modify Test Program
+Use and modify the [priority_test.c](./source/priority_test.c) program that
+- [ ] Creates multiple processes with different priorities
+- [ ] CPU-intensive workloads to demonstrate scheduling behaviour
 - [ ] Periodic priority reporting to show aging effects
 
-#### 2. Demonstrate Functionality
-- [ ] Prove that higher priority processes get preference
+#### 2. Demonstrate Functionality (10 points)
+create a 5 min video presentation that:
+- [ ] Show that higher priority processes get preference
 - [ ] Show that aging prevents starvation of low-priority processes
 - [ ] Validate that all processes eventually complete
 
