@@ -1,8 +1,8 @@
-# Project 2: Priority CPU Scheduling for Xv6
+# Project 2: Priority CPU Scheduling for xv6
 
 ## 📋 Overview
 
-In this project, you will implement a priority-based process scheduler with an aging mechanism in the Xv6 operating system. This will replace the default round-robin scheduler with a more sophisticated scheduling algorithm that prevents starvation while maintaining priority-based execution order.
+In this project, you will implement a priority-based process scheduler with an aging mechanism in the xv6 operating system. This will replace the default round-robin scheduler with a more sophisticated scheduling algorithm that prevents starvation while maintaining priority-based execution order.
 
 ## 🎯 Learning Objectives
 
@@ -15,10 +15,10 @@ By completing this project, you will:
 
 ## 📚 Background
 
-### Current Xv6 Scheduler
+### Current xv6 Scheduler
 The default xv6 scheduler employs a simple round-robin algorithm with a fixed time quantum of approximately 10 milliseconds, which executes processes in the order they become runnable. 
 It scans the process table from the beginning and runs the first runnable process it finds until that process voluntarily yields, blocks, exits, or the time slice (i.e., quantum) expires. 
-This approach is simple but doesn't allow for prioritizing critical processes or ensuring fair time distribution.
+This approach is simple, but it doesn't allow for prioritizing critical processes or ensuring a fair distribution of time.
 
 ### Priority Scheduling
 Priority scheduling assigns each process a priority level and always runs the highest-priority ready process. However, this can lead to **starvation** where low-priority processes never get CPU time.
@@ -76,7 +76,7 @@ Use and modify the [priority_test.c](source/priority_test.c) program that
 - [ ] Periodic priority reporting to show aging effects
 
 #### 2. Demonstrate Functionality (10 points)
-create a 5 min video presentation that:
+Create a 5-minute video presentation that:
 - [ ] Show that higher priority processes get preference
 - [ ] Show that aging prevents starvation of low-priority processes
 - [ ] Validate that all processes eventually complete
@@ -138,7 +138,7 @@ There is a sample test program in the source folder, `priority_test.c`, that you
 
 ## 📚 Resources and References
 
-- [Xv6 Book](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
+- [xv6 Book](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf)
 - Operating System Concepts (Silberschatz, Galvin, Gagne) - Chapter 5: CPU Scheduling
 - Linux kernel scheduler documentation for real-world examples
 
