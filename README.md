@@ -158,23 +158,21 @@ There is a sample test program in the source folder, `priority_test.c`, that you
 Vibe coding is allowed and encouraged.
 
 ## 📤 Deliverables and Submission Instructions
-You need to submit two files:
-1. **Code Submission**: Zip the whole xv6-public folder, including all your modifications and test programs, and submit as `xv6.zip`.
+You need to submit your project as `xv6-cpusched.zip`, including the following:
+1. **Source Code**: Includes all your modifications and test programs.
 2. **Demo Video**: A 5-minute video (e.g., Zoom with screen capture and Camera) explaining your code and showcasing your scheduler in action.
 3. **Readme.txt**: A readme file in which you explain your implementation.
 
 ```
 ## 📤 Deliverables and Submission Instructions
 
-📦 Project Submission  
-├── 📁 xv6.zip  
-│   ├── 📂 xv6-public/  
+📦 xv6-cpusched.zip  
+│   ├── 📂 xv6-public  
 │   └── 📝 Include ALL modifications and test programs  
 ├── 🎥 demo_video.mp4  
 │   ├── ⏱️ Duration: 5 minutes maximum  
 │   ├── 🖥️ Screen capture with camera  
 │   └── 📢 Audio explanation of implementation  
-│
 └── 📖 readme.txt  
     ├── 💡 Implementation explanation  
     ├── 🔍 Design decisions  
