@@ -160,7 +160,7 @@ Vibe coding is allowed and encouraged.
 ## 📤 Deliverables and Submission Instructions
 You need to submit your project as `xv6-cpusched.zip`, including the following:
 1. **Source Code**: Includes all your modifications and test programs.
-2. **Demo Video**: A 5-minute video (e.g., Zoom with screen capture and Camera) explaining your code and showcasing your scheduler in action.
+2. **Demo Video**: A 5-minute video (e.g., Zoom with screen capture and Camera on) explaining your code and showcasing your scheduler in action.
 3. **Readme.txt**: A readme file in which you explain your implementation.
 
 ```
