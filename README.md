@@ -98,7 +98,7 @@ Create a 5-minute video presentation that:
 
 ### 🔒 Safety Considerations
 
-- ⚠️ Always acquire `ptable.lock` before modifying process state
+- ⚠️ Always acquire `lock` before modifying process state
 - ⚠️ Use `argint()` for safe parameter extraction in system calls
 - ⚠️ Validate priority ranges (0-10) in `setpriority()`
 - ⚠️ Handle error cases gracefully (process not found, invalid parameters)
