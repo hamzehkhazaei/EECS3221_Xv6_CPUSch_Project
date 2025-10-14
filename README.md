@@ -67,7 +67,7 @@ Implement aging to prevent starvation:
 - [ ] Modify scheduler to apply aging before process selection
 - [ ] Ensure atomic operations with proper locking
 
-### Part 3: Testing and Validation 
+### Part 3: Testing and Validation (10 points)
 
 #### 1. Create/Modify Test Program
 Use and modify the [priority_test.c](source/priority_test.c) program that
@@ -75,7 +75,7 @@ Use and modify the [priority_test.c](source/priority_test.c) program that
 - [ ] CPU-intensive workloads to demonstrate scheduling behaviour
 - [ ] Periodic priority reporting to show aging effects
 
-#### 2. Demonstrate Functionality (10 points)
+#### 2. Demonstrate Functionality 
 Create a 5-minute video presentation that:
 - [ ] Show that higher priority processes get preference
 - [ ] Show that aging prevents starvation of low-priority processes
