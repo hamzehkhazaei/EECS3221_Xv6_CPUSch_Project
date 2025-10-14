@@ -77,6 +77,7 @@ Use and modify the [priority_test.c](source/priority_test.c) program that
 
 #### 2. Demonstrate Functionality 
 Create a 5-minute video presentation that:
+- [ ] Explain your code 
 - [ ] Show that higher priority processes get preference
 - [ ] Show that aging prevents starvation of low-priority processes
 - [ ] Validate that all processes eventually complete
