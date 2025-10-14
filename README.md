@@ -167,8 +167,8 @@ You need to submit your project as `xv6-cpusched.zip`, including the following:
 ## 📤 Your zip file should have a structure like below:
 
 📦 xv6-cpusched.zip  
-│   ├── 📂 xv6-public  
-│   └── 📝 Include ALL modifications and test programs  
+│   ├── 📂 xv6-riscv  
+│   └── 📝 Include all modifications in kernel and test programs in the user directory  
 ├── 🎥 demo_video.mp4  
 │   ├── ⏱️ Duration: 5 minutes maximum  
 │   ├── 🖥️ Screen capture with camera  
