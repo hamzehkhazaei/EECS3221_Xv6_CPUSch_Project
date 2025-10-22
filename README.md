@@ -155,8 +155,8 @@ There is a sample test program in the source folder, `priority_test.c`, that you
 
 ## 🎓 Academic Integrity
 
-**⚠️ Important**: This is an individual project. While you may discuss concepts with classmates, all code must be your own work. Copying code from online sources or other students will result in academic penalties.
-Vibe coding is allowed and encouraged.
+**⚠️ Important**: This is an individual project. While you may discuss concepts with classmates, all code must be your own work. 
+Copying code from online sources or other students will result in academic penalties.
 
 ## 📤 Deliverables and Submission Instructions
 You need to submit your project as `xv6-cpusched.zip`, including the following:
