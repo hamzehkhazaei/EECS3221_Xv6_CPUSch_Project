@@ -168,8 +168,12 @@ You need to submit your project as `xv6-cpusched.zip`, including the following:
 ## 📤 Your zip file should have a structure like below:
 
 📦 xv6-cpusched.zip  
-│   ├── 📂 xv6-riscv  
-│   └── 📝 Include all modifications in kernel and test programs in the user directory  
+├── 📂 xv6-riscv
+│   ├── 📂 kernel
+│       └── 📝 includes all your modifications in the kernel 
+│   ├── 📂 user
+│       └── 📝 includes your test programs 
+│   └── 📂 mkfs   
 ├── 🎥 demo_video.mp4  
 │   ├── ⏱️ Duration: 5 minutes maximum  
 │   ├── 🖥️ Screen capture with camera  
