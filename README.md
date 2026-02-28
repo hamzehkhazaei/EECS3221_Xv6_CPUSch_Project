@@ -172,7 +172,7 @@ Before submitting your code, ensure you run `make clean` followed by `make qemu`
 to verify that your xv6 OS is functioning as expected.
 ```
 ```
-## 📤 Your zip file should have a structure like below:
+## 📤 Your submitted zip file should have a structure like below:
 
 📦 xv6-cpusched.zip  
 ├── 📂 xv6-riscv
@@ -193,5 +193,5 @@ to verify that your xv6 OS is functioning as expected.
 ```
 
 ---
-
-**Instructor:** Hamzeh Khazaei
+Good luck.
+Hamzeh Khazaei
