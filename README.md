@@ -50,7 +50,7 @@ Implement a priority-based scheduler that:
 - [ ] Child processes inherit the parent's priority in `fork()`
 - [ ] Proper initialization in `allocproc()`
 
-### Part 2: Aging Mechanism (30 points)
+### Part 2: Aging Mechanism (40 points)
 
 Implement aging to prevent starvation:
 
@@ -61,13 +61,13 @@ Implement aging to prevent starvation:
 #### 2. Aging Algorithm
 - [ ] Increment priority every `X`, e.g., 10, scheduler ticks of waiting
 - [ ] Maximum priority cap at 10
-- [ ] Reset priority to base priority when process runs
+- [ ] Reset priority to base priority when the process runs
 
 #### 3. Aging Integration
 - [ ] Modify scheduler to apply aging before process selection
 - [ ] Ensure atomic operations with proper locking
 
-### Part 3: Testing and Validation (10 points)
+### Part 3: Testing and Validation
 
 #### 1. Create/Modify Test Program
 Use and modify the [priority_test.c](source/priority_test.c) program that
