@@ -168,7 +168,8 @@ You need to submit your project as `xv6-cpusched.zip`, including the following:
 
 ```text
 **Important Note:**
-Before you submit your code, ensure you run `make clean` followed by `make qemu` to verify that your xv6 OS is functioning as expected.
+Before you submit your code, ensure you run `make clean` followed by `make qemu`
+to verify that your xv6 OS is functioning as expected.
 
 
 ```
