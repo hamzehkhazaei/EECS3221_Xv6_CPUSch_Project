@@ -158,9 +158,6 @@ There is a sample test program in the source folder, `priority_test.c`, that you
 **⚠️ Important**: This is an individual project. While you may discuss concepts with classmates, all code must be your own work. 
 Copying code from online sources or other students will result in academic penalties.
 
-> [!NOTE]
-> This is a special GitHub notice block. It has a specific icon and colour on GitHub.
-
 
 ## 📤 Deliverables and Submission Instructions
 You need to submit your project as `xv6-cpusched.zip`, including the following:
@@ -170,6 +167,12 @@ You need to submit your project as `xv6-cpusched.zip`, including the following:
 
 
 **Important Note:** Before you submit your code, ensure you run `make clean` followed by `make qemu` to verify that your xv6 OS is functioning as expected.
+
+```text
+This is your text in a box.
+You can include multiple lines here.
+
+
 
 ```
 ## 📤 Your zip file should have a structure like below:
