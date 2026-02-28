@@ -164,6 +164,9 @@ You need to submit your project as `xv6-cpusched.zip`, including the following:
 2. **Demo Video**: A 5-minute video (e.g., Zoom with screen capture and Camera on) explaining your code and showcasing your scheduler in action.
 3. **Readme.txt**: A readme file in which you explain your implementation.
 
+
+**Important Note:** Before you submit your code, ensure you run `make clean` followed by `make qemu` to verify that your xv6 OS is functioning as expected.
+
 ```
 ## 📤 Your zip file should have a structure like below:
 
