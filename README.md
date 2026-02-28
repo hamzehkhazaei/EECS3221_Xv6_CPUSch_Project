@@ -166,11 +166,9 @@ You need to submit your project as `xv6-cpusched.zip`, including the following:
 3. **Readme.txt**: A readme file in which you explain your implementation.
 
 
-```
-## ⚠️ Important:
-Before submitting your code, ensure you run `make clean` followed by `make qemu`
+**⚠️ Important**: Before submitting your code, ensure you run `make clean` followed by `make qemu`
 to verify that your xv6 OS is functioning as expected.
-```
+
 ```
 ## 📤 Your submitted zip file should have a structure like below:
 
